@@ -1,7 +1,6 @@
 {
   "name":"com.package.uiframework","version":"0.0.1",
   "description":"com.package.uiframework","main":"","scripts":{},
-  "unity": "2019.3.0",
   "author":"Brainbasher","license":"ISC","displayName":"UIFramework","type":"library","hideInEditor":false,
   "repository" :
    {
