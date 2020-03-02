@@ -1,0 +1,511 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1826750116652922}
+  m_IsPrefabAsset: 1
+--- !u!1 &1335054080588056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224431470711465616}
+  - component: {fileID: 222263556046706356}
+  - component: {fileID: 114115818109731632}
+  m_Layer: 0
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1684230136148590
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224968775730402366}
+  - component: {fileID: 222483310857502340}
+  - component: {fileID: 114786260646288808}
+  m_Layer: 0
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1826750116652922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224795225653875026}
+  - component: {fileID: 222735816073832452}
+  - component: {fileID: 114641444954937626}
+  m_Layer: 0
+  m_Name: PfUILabelTemplate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &114115818109731632
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1335054080588056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!114 &114641444954937626
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1826750116652922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10c8f323fd0294f468eb405a3cf1c8bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ProxyTransform: {fileID: 0}
+  _Visible: 1
+  _State: 2
+  _RotationPerSecond: {x: 0, y: 0, z: 0}
+  _TooltipInfo:
+    _HideTooltip: 0
+    _Duration: 0.5
+    _InitialAlpha: 0.1
+    _InitialScale: 0.1
+    _FinalScale: 1
+    _Offset: {x: 0, y: 0}
+    _Text:
+      _Text: 
+      _ID: 0
+    _Font: {fileID: 0}
+    _FontSize: 20
+    _TextColor: {r: 1, g: 1, b: 1, a: 1}
+    _Sound:
+      _Settings:
+        _Channel: 
+        _Pool: 
+        _Priority: 0
+        _Volume: 1
+        _Pitch: 1
+        _MinVolume: 0
+        _MaxVolume: 1
+        _RolloffFactor: 0.1
+        _RolloffBegin: 0
+        _RolloffEnd: Infinity
+        _UseRolloffDistance: 0
+        _Loop: 0
+        _ReleaseOnStop: 1
+        _FollowListener: 0
+        _EventTarget: {fileID: 0}
+      _AudioClip: {fileID: 0}
+      _Triggers:
+        _TriggerData: []
+    _BackgroundImage: {fileID: 0}
+    _Color: {r: 1, g: 1, b: 1, a: 1}
+    _Style: 0
+  _Text: {fileID: 114786260646288808}
+  _Background: {fileID: 114115818109731632}
+  _RawImageBackground: {fileID: 0}
+  _ClickEffects:
+    _Clip:
+      _Settings:
+        _Channel: 
+        _Pool: 
+        _Priority: 0
+        _Volume: 1
+        _Pitch: 1
+        _MinVolume: 0
+        _MaxVolume: 1
+        _RolloffFactor: 0.1
+        _RolloffBegin: 0
+        _RolloffEnd: Infinity
+        _UseRolloffDistance: 0
+        _Loop: 0
+        _ReleaseOnStop: 1
+        _FollowListener: 0
+        _EventTarget: {fileID: 0}
+      _AudioClip: {fileID: 0}
+      _Triggers:
+        _TriggerData: []
+    _PositionEffect:
+      _UseEffect: 0
+      _ApplyTo:
+      - _Time: 0.1
+        _Offset: {x: 0, y: 0, z: 0}
+        _PositionEffect: 28
+        _Widget: {fileID: 114115818109731632}
+      - _Time: 0.1
+        _Offset: {x: 0, y: 0, z: 0}
+        _PositionEffect: 28
+        _Widget: {fileID: 114786260646288808}
+    _ScaleEffect:
+      _UseEffect: 0
+      _ApplyTo:
+      - _Time: 0.1
+        _Scale: {x: 1.5, y: 1.5, z: 0}
+        _ScaleEffect: 28
+        _Widget: {fileID: 114115818109731632}
+      - _Time: 0.1
+        _Scale: {x: 1.5, y: 1.5, z: 0}
+        _ScaleEffect: 28
+        _Widget: {fileID: 114786260646288808}
+    _ColorEffect:
+      _UseEffect: 0
+      _ApplyTo:
+      - _Time: 0.1
+        _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+        _ColorEffect: 28
+        _Widget: {fileID: 114115818109731632}
+      - _Time: 0.1
+        _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+        _ColorEffect: 28
+        _Widget: {fileID: 114786260646288808}
+    _SpriteEffect:
+      _UseEffect: 0
+      _ApplyTo:
+      - _Sprite: {fileID: 0}
+        _Widget: {fileID: 114115818109731632}
+      - _Sprite: {fileID: 0}
+        _Widget: {fileID: 114786260646288808}
+    _ParticleEffect:
+      _Particles: []
+    _MaxDuration: -1
+  _DisabledEffects:
+    _Clip:
+      _Settings:
+        _Channel: 
+        _Pool: 
+        _Priority: 0
+        _Volume: 1
+        _Pitch: 1
+        _MinVolume: 0
+        _MaxVolume: 1
+        _RolloffFactor: 0.1
+        _RolloffBegin: 0
+        _RolloffEnd: Infinity
+        _UseRolloffDistance: 0
+        _Loop: 0
+        _ReleaseOnStop: 1
+        _FollowListener: 0
+        _EventTarget: {fileID: 0}
+      _AudioClip: {fileID: 0}
+      _Triggers:
+        _TriggerData: []
+    _PositionEffect:
+      _UseEffect: 0
+      _ApplyTo:
+      - _Time: 0.1
+        _Offset: {x: 0, y: 0, z: 0}
+        _PositionEffect: 28
+        _Widget: {fileID: 114115818109731632}
+      - _Time: 0.1
+        _Offset: {x: 0, y: 0, z: 0}
+        _PositionEffect: 28
+        _Widget: {fileID: 114786260646288808}
+    _ScaleEffect:
+      _UseEffect: 0
+      _ApplyTo:
+      - _Time: 0.1
+        _Scale: {x: 1.5, y: 1.5, z: 0}
+        _ScaleEffect: 28
+        _Widget: {fileID: 114115818109731632}
+      - _Time: 0.1
+        _Scale: {x: 1.5, y: 1.5, z: 0}
+        _ScaleEffect: 28
+        _Widget: {fileID: 114786260646288808}
+    _ColorEffect:
+      _UseEffect: 0
+      _ApplyTo:
+      - _Time: 0.1
+        _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+        _ColorEffect: 28
+        _Widget: {fileID: 114115818109731632}
+      - _Time: 0.1
+        _Color: {r: 0.29411763, g: 0.29411763, b: 0.29411763, a: 1}
+        _ColorEffect: 28
+        _Widget: {fileID: 114786260646288808}
+    _SpriteEffect:
+      _UseEffect: 0
+      _ApplyTo:
+      - _Sprite: {fileID: 0}
+        _Widget: {fileID: 114115818109731632}
+      - _Sprite: {fileID: 0}
+        _Widget: {fileID: 114786260646288808}
+    _ParticleEffect:
+      _Particles: []
+    _MaxDuration: -1
+  _HoverEffects:
+    _Clip:
+      _Settings:
+        _Channel: 
+        _Pool: 
+        _Priority: 0
+        _Volume: 1
+        _Pitch: 1
+        _MinVolume: 0
+        _MaxVolume: 1
+        _RolloffFactor: 0.1
+        _RolloffBegin: 0
+        _RolloffEnd: Infinity
+        _UseRolloffDistance: 0
+        _Loop: 0
+        _ReleaseOnStop: 1
+        _FollowListener: 0
+        _EventTarget: {fileID: 0}
+      _AudioClip: {fileID: 0}
+      _Triggers:
+        _TriggerData: []
+    _PositionEffect:
+      _UseEffect: 0
+      _ApplyTo:
+      - _Time: 0.1
+        _Offset: {x: 0, y: 0, z: 0}
+        _PositionEffect: 28
+        _Widget: {fileID: 114115818109731632}
+      - _Time: 0.1
+        _Offset: {x: 0, y: 0, z: 0}
+        _PositionEffect: 28
+        _Widget: {fileID: 114786260646288808}
+    _ScaleEffect:
+      _UseEffect: 0
+      _ApplyTo:
+      - _Time: 0.1
+        _Scale: {x: 1.1, y: 1.1, z: 0}
+        _ScaleEffect: 28
+        _Widget: {fileID: 114115818109731632}
+      - _Time: 0.1
+        _Scale: {x: 1.1, y: 1.1, z: 0}
+        _ScaleEffect: 28
+        _Widget: {fileID: 114786260646288808}
+    _ColorEffect:
+      _UseEffect: 0
+      _ApplyTo:
+      - _Time: 0.1
+        _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+        _ColorEffect: 28
+        _Widget: {fileID: 114115818109731632}
+      - _Time: 0.1
+        _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+        _ColorEffect: 28
+        _Widget: {fileID: 114786260646288808}
+    _SpriteEffect:
+      _UseEffect: 0
+      _ApplyTo:
+      - _Sprite: {fileID: 0}
+        _Widget: {fileID: 114115818109731632}
+      - _Sprite: {fileID: 0}
+        _Widget: {fileID: 114786260646288808}
+    _ParticleEffect:
+      _Particles: []
+    _MaxDuration: -1
+  _PressEffects:
+    _Clip:
+      _Settings:
+        _Channel: 
+        _Pool: 
+        _Priority: 0
+        _Volume: 1
+        _Pitch: 1
+        _MinVolume: 0
+        _MaxVolume: 1
+        _RolloffFactor: 0.1
+        _RolloffBegin: 0
+        _RolloffEnd: Infinity
+        _UseRolloffDistance: 0
+        _Loop: 0
+        _ReleaseOnStop: 1
+        _FollowListener: 0
+        _EventTarget: {fileID: 0}
+      _AudioClip: {fileID: 0}
+      _Triggers:
+        _TriggerData: []
+    _PositionEffect:
+      _UseEffect: 0
+      _ApplyTo:
+      - _Time: 0.1
+        _Offset: {x: 0, y: 0, z: 0}
+        _PositionEffect: 28
+        _Widget: {fileID: 114115818109731632}
+      - _Time: 0.1
+        _Offset: {x: 0, y: 0, z: 0}
+        _PositionEffect: 28
+        _Widget: {fileID: 114786260646288808}
+    _ScaleEffect:
+      _UseEffect: 0
+      _ApplyTo:
+      - _Time: 0.1
+        _Scale: {x: 1.5, y: 1.5, z: 0}
+        _ScaleEffect: 28
+        _Widget: {fileID: 114115818109731632}
+      - _Time: 0.1
+        _Scale: {x: 1.5, y: 1.5, z: 0}
+        _ScaleEffect: 28
+        _Widget: {fileID: 114786260646288808}
+    _ColorEffect:
+      _UseEffect: 0
+      _ApplyTo:
+      - _Time: 0.1
+        _Color: {r: 0.8308824, g: 0.8308824, b: 0.8308824, a: 1}
+        _ColorEffect: 28
+        _Widget: {fileID: 114115818109731632}
+      - _Time: 0.1
+        _Color: {r: 0, g: 0, b: 0, a: 1}
+        _ColorEffect: 28
+        _Widget: {fileID: 114786260646288808}
+    _SpriteEffect:
+      _UseEffect: 0
+      _ApplyTo:
+      - _Sprite: {fileID: 0}
+        _Widget: {fileID: 114115818109731632}
+      - _Sprite: {fileID: 0}
+        _Widget: {fileID: 114786260646288808}
+    _ParticleEffect:
+      _Particles: []
+    _MaxDuration: -1
+--- !u!114 &114786260646288808
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1684230136148590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Widget
+--- !u!222 &222263556046706356
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1335054080588056}
+  m_CullTransparentMesh: 0
+--- !u!222 &222483310857502340
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1684230136148590}
+  m_CullTransparentMesh: 0
+--- !u!222 &222735816073832452
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1826750116652922}
+  m_CullTransparentMesh: 0
+--- !u!224 &224431470711465616
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1335054080588056}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224795225653875026}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224795225653875026
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1826750116652922}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 224431470711465616}
+  - {fileID: 224968775730402366}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224968775730402366
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1684230136148590}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224795225653875026}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
