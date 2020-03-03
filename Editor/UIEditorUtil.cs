@@ -5,7 +5,7 @@ namespace UIFrameWork.Editor
 {
 	public class UIEditorUtil
 	{
-		private static string TEMPLATE_PATH = "Assets/com.package.uiframework/Runtime/Prefabs/";
+		private static string TEMPLATE_PATH = "Packages/com.package.uiframework/Runtime/Prefabs/";
 		private static string PREFAB_FILE_EXTENSION = ".prefab";
 		private static string UI_MANAGER_PREFAB = "PfUIManagerTemplate";
 		private static string UI_MANAGER_NAME = "UIManager";

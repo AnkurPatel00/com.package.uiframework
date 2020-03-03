@@ -1,7 +1,8 @@
 {
     "name": "UIFramework.Editor",
     "references": [
-        "UIAssembly"
+        "UIAssembly",
+        "UtilAssembly"
     ],
     "includePlatforms": [
         "Editor"
