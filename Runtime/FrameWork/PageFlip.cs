@@ -1,8 +1,8 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.EventSystems;
+﻿using System;
 using TweenUtil;
-using System;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 namespace UIFrameWork
 {
@@ -16,9 +16,9 @@ namespace UIFrameWork
         public UIWidget _Next;
         public float _SnapDuration = 0.5f;
         public int pTotalPage { get { return mTotalPages; } }
-		public int pCurrentPage { get { return mCurrentPage; } }
+        public int pCurrentPage { get { return mCurrentPage; } }
 
-		private bool mIsHorizontal; //Horizontal or vertical
+        private bool mIsHorizontal; //Horizontal or vertical
         private RectTransform mViewport;
         private RectTransform mContent; //The content RectTransform is what is being manipulated to show the correct page content
         private Vector3 mContentInitialPosition;
@@ -27,20 +27,20 @@ namespace UIFrameWork
         private int mTotalPages;
         private int mCurrentPage;
         private bool mWidgetsInitialised;
-		private bool mInitialized;
-		private UIEvents mEventReceiver = new UIEvents();
+        private bool mInitialized;
+        private UIEvents mEventReceiver = new UIEvents();
 
-		public void Initialize(ScrollRect scrollRect)
+        public void Initialize(ScrollRect scrollRect)
         {
-			if (!mInitialized)
-			{
-				mInitialized = true;
+            if (!mInitialized)
+            {
+                mInitialized = true;
 
-				mEventReceiver.OnClick += OnWidgetClick;
-			}
+                mEventReceiver.OnClick += OnWidgetClick;
+            }
 
             mContent = scrollRect.content;
-            
+
             scrollRect.movementType = ScrollRect.MovementType.Unrestricted;
             scrollRect.inertia = false; //If intertia is enabled while switching to page after drag end, scrollRect's momentum conflicts with GoTo() tweener.
 
@@ -72,16 +72,16 @@ namespace UIFrameWork
             UIMenu menu = GetComponent<UIMenu>();
 
             if (_Next != null)
-			{
-				_Next.pEventTarget = mEventReceiver;
-				_Next.Initialize(menu, null);
-			}   
+            {
+                _Next.pEventTarget = mEventReceiver;
+                _Next.Initialize(menu, null);
+            }
 
             if (_Previous != null)
-			{
-				_Previous.pEventTarget = mEventReceiver;
-				_Previous.Initialize(menu, null);
-			}
+            {
+                _Previous.pEventTarget = mEventReceiver;
+                _Previous.Initialize(menu, null);
+            }
 
             mWidgetsInitialised = true;
             UpdateArrowStatus();
@@ -100,9 +100,9 @@ namespace UIFrameWork
             if (mGridLayoutGroup == null)
                 return;
 
-            if(mContent.childCount > 0)
+            if (mContent.childCount > 0)
             {
-                if(mIsHorizontal)
+                if (mIsHorizontal)
                     mTotalPages = (int)System.Math.Ceiling((((mGridLayoutGroup.cellSize.x + mGridLayoutGroup.spacing.x) * mContent.childCount) / mGridLayoutGroup.constraintCount / mPageSize.x));
                 else
                     mTotalPages = (int)System.Math.Ceiling((((mGridLayoutGroup.cellSize.y + mGridLayoutGroup.spacing.y) * mContent.childCount) / mGridLayoutGroup.constraintCount / mPageSize.y));
@@ -146,11 +146,11 @@ namespace UIFrameWork
             _Previous.pState = (mCurrentPage > 1) ? WidgetState.INTERACTIVE : WidgetState.DISABLED;
         }
 
-		/// <summary>
-		/// This will be called from 2 places - 
-		/// (1) UIMenu, when dragging over widgets
-		/// (2) EventSystem, when dragging over the scroll area background
-		/// </summary>
+        /// <summary>
+        /// This will be called from 2 places - 
+        /// (1) UIMenu, when dragging over widgets
+        /// (2) EventSystem, when dragging over the scroll area background
+        /// </summary>
         public void OnEndDrag(PointerEventData eventData)
         {
             int pageNumber = 0;
